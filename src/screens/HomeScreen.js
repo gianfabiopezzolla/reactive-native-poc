@@ -6,12 +6,20 @@ const HomeScreen = ({ navigation }) => {
     <View>
       <Text style={styles.text}>Hi there!</Text>
       <Button
+        style={styles.button}
         onPress={() => navigation.navigate("Components")}
-        title="this is a button"
+        title="go to components"
       />
-      <TouchableOpacity onPress={() => console.log("clicked")}>
-        <Text>Go to demo page</Text>
-      </TouchableOpacity>
+      <Button
+        style={styles.button}
+        onPress={() => navigation.navigate("Image")}
+        title="go to image"
+      />
+      <Button
+        style={styles.button}
+        onPress={() => navigation.navigate("Counter")}
+        title="go to counter"
+      />
     </View>
   );
 };
@@ -19,6 +27,9 @@ const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 30,
+  },
+  button: {
+    paddingBottom: "10px",
   },
 });
 
