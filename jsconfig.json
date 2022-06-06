@@ -2,8 +2,7 @@
   "compilerOptions": {
     "target": "ES6",
     "module": "commonjs",
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": "src"
+    "allowSyntheticDefaultImports": true
   },
   "exclude": ["node_modules"]
 }
